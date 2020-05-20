@@ -1,0 +1,16 @@
+# makebanned
+rm cips.txt banned.* mal.txt deALL.txt
+echo 'downloading fresh IP lists. . .'
+python3 getlists.py
+echo 'creating ban.txt . . .'
+
+# NOTE: remove the '*' to use just the current fail2ban.log
+zgrep ' Ban ' /var/log/fail2ban.log* > ban.txt
+
+echo 'stripping out IP addresses . . .'
+python3 banstrip.py
+echo 'processing IP addresses . . .'
+python3 ip2locfile.py
+echo 'copy banned.csv ...'
+# copy or ftp the banned.csv to an accessible location
+echo 'makebanned is completed'
