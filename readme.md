@@ -17,5 +17,4 @@ CREATE TABLE "ip" ( `ip_from` INTEGER, `ip_to` INTEGER, `country_code` TEXT, `co
 
 Then import the downloaded csv file using your favorite sqlite db manager or ...
 
-
-
+related: https://sites.google.com/view/programtuto/linux-console/ip2location
