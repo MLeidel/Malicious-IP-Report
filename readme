@@ -7,3 +7,5 @@ These programs and commands capture the Fail2ban log (ip) information to
 produce a spreadsheet file listing the ip, country, city, region, latitude, 
 and longitude of these attackers. It also queries websites for lists of malicious 
 ip addresses to compare to your captured Fail2ban ips.
+
+Download the database file from https://lite.ip2location.com/file-download
