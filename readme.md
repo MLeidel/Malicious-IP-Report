@@ -9,7 +9,7 @@ and longitude of these attackers. It also queries websites for lists of maliciou
 ip addresses to compare to your captured Fail2ban ips.
 
 Download the database file from https://lite.ip2location.com/file-download
-Use the "csv" download that has the last columns as lat and lon.
+Use the "csv" download that has the last columns as latitude and longitude.
 
 ip2locfile.py uses sqlite. Create the table and columns like this:
 
